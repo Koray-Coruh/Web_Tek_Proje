@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Koray Çoruh - Şehrim</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    #carouselAmasya .carousel-item img {
+      height: 600px;
+      width: 900px;
+      object-fit: cover;
+      width: 100%;
+      margin: 20px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card-custom {
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      background-color: #fff;
+      padding: 20px;
+      align-items: center;
+    }
+
+    .card-custom img {
+      border-radius: 15px;
+      width: 350px;       /* Sabit genişlik */
+      height: 230px;      /* Sabit yükseklik */
+      object-fit: cover;  /* Görseli kırparak doldur */
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .card-content {
+      max-width: 600px;
+      flex-grow: 1;
+    }
+
+    .card-content h3 {
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Koray Çoruh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="ana.html">Hakkımda</a></li>
+          <li class="nav-item"><a class="nav-link" href="egitim.html">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="ilgialanlari.html">İlgi Alanlarım</a></li>
+          <li class="nav-item"><a class="nav-link active" href="sehrim.html">Şehrim</a></li>
+          <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light text-dark text-center py-4">
+    <h1>Koray Çoruh - Şehrim</h1>
+  </header>
+
+  <main class="container my-5">
+    <section>
+      <h2>Amasya'ya Genel Bakış</h2>
+      <p>Amasya, Karadeniz bölgesinde yer alan tarihi ve kültürel zenginlikleriyle ünlü bir ildir. Nüfusu yaklaşık 330.000'dir.</p>
+    </section>
+
+    <section class="my-5">
+      <div id="carouselAmasya" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <a href="#yer1"><img src="img/sehrim/yalı.jpg" class="d-block w-100" alt="Yalıboyu Evleri" /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#yer2"><img src="img/sehrim/kale.jpg" class="d-block w-100" alt="Amasya Kalesi" /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#yer3"><img src="img/sehrim/ırmak.jpg" class="d-block w-100" alt="Yeşilırmak Nehri" /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#yer4"><img src="img/sehrim/kral.jpg" class="d-block w-100" alt="Kral Kaya Mezarları" /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#yer5"><img src="img/sehrim/arkeoloji.jpg" class="d-block w-100" alt="Arkeoloji Müzesi" /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#yer6"><img src="img/sehrim/borobay.jpg" class="d-block w-100" alt="Borabay Gölü" /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#yer7"><img src="img/sehrim/ayna.jpg" class="d-block w-100" alt="Aynalı Mağara" /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#yer8"><img src="img/sehrim/ickale.jpg" class="d-block w-100" alt="İç Kale" /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#yer9"><img src="img/sehrim/saat.jpg" class="d-block w-100" alt="Saat Kulesi" /></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAmasya" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Geri</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAmasya" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">İleri</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="yer1" class="mb-5">
+      <div class="card-custom">
+        <img src="img/sehrim/yalı_.jpg" alt="Yalıboyu Evleri" />
+        <div class="card-content">
+          <h3>Yalıboyu Evleri</h3>
+          <p>
+Amasya Yalıboyu Evleri, Yeşilırmak kenarındaki tarihi sur duvarları üzerine inşa edilmiş, geleneksel Osmanlı mimarisini yansıtan yapılardır. Ahşap çatkı arası kerpiç dolgulu olarak yapılan bu evler, kırma ya da beşik çatılarla örtülüdür. Genellikle bodrum üzeri tek veya iki katlı olan evlerde, bazı katlarda dışa taşkın köşk benzeri şahnişler bulunur. Cumbalı yapılarıyla dikkat çeken evler, hem estetik hem de işlevsel açıdan öne çıkar. Avlulu olan evlerin içinde genellikle su kuyusu ve ocak yer alır. İç ve dış mekânlar birbirini tamamlayacak şekilde düzenlenmiştir.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yer2" class="mb-5">
+      <div class="card-custom">
+        <img src="img/sehrim/kale_.jpg" alt="Amasya Kalesi" />
+        <div class="card-content">
+          <h3>Amasya Kalesi</h3>
+          <p>
+Amasya Kalesi, şehri kuzeyden çevreleyen Harşena Dağı üzerinde yer alır ve Harşena Kalesi olarak da bilinir. Deniz seviyesinden 700, Yeşilırmak’tan ise 300 metre yüksekte konumlanan kale, bazı kaynaklara göre Pontus Kralı Mithridates, bazılarına göre ise Kumandan Karsan tarafından yaptırılmıştır. Kale eteklerindeki Hatuniye Mahallesi’nde yer alan Amasya Evleri, camiler ve hamamlar, antik sur duvarları üzerine inşa edilmiştir. Bu “Aşağı Kale” bölgesine çeşitli köprülerden erişim sağlanabilir. Kızlar Sarayı ise demiryolu ile İçeri Şehir’den ayrılır.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yer3" class="mb-5">
+      <div class="card-custom">
+        <img src="img/sehrim/ırmak_.jpg" alt="Yeşilırmak Nehri" />
+        <div class="card-content">
+          <h3>Yeşilırmak Nehri</h3>
+          <p>
+Yeşilırmak Nehri, Amasya kent merkezini ikiye bölen ve kentin tarihsel dokusunu şekillendiren önemli bir akarsudur. Nehir boyunca uzanan surlar, köprüler ve Osmanlı evleri kente tarihi bir görünüm kazandırır. Alçak Köprü, Hükümet Köprüsü gibi yapılar Amasya’nın iki yakasını birleştirir. Günümüzde nehir kenarı yürüyüş yolları ve kafelerle halkın dinlenme alanıdır. Akşamları ışıklandırılan kıyılar, Amasya’nın eşsiz manzarasını oluşturur. Yeşilırmak, hem doğal güzelliği hem tarihi önemiyle kentin simgelerindendir.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yer4" class="mb-5">
+      <div class="card-custom">
+        <img src="img/sehrim/kral.jpg" alt="Kral Kaya Mezarları" />
+        <div class="card-content">
+          <h3>Kral Kaya Mezarları</h3>
+          <p>
+Kral Kaya Mezarları, Amasya'nın en önemli tarihî simgelerindendir. Pontus Krallığı döneminde kayalara oyularak yapılmış olan bu mezarlar, şehre hakim tepelerde konumlanmıştır. Helenistik dönem mimarisini yansıtan yapılar, kral ve önemli kişilerin anıt mezarlarıdır. Şehrin siluetinde belirgin olan bu kaya mezarlar, turistler ve tarih meraklıları için önemli bir ziyaret noktasıdır.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yer5" class="mb-5">
+      <div class="card-custom">
+        <img src="img/sehrim/arkeoloji.jpg" alt="Amasya Arkeoloji Müzesi" />
+        <div class="card-content">
+          <h3>Amasya Arkeoloji Müzesi</h3>
+          <p>
+Amasya Arkeoloji Müzesi, bölgenin zengin tarihini yansıtan eserlerle doludur. Hititlerden Osmanlı'ya kadar geniş bir yelpazede arkeolojik buluntular sergilenir. Müze, tarih meraklıları için önemli bir kültürel merkezdir. Sergilenen objeler arasında mezar buluntuları, heykeller ve günlük yaşam araçları bulunur.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yer6" class="mb-5">
+      <div class="card-custom">
+        <img src="img/sehrim/borobay_.jpg" alt="Borabay Gölü" />
+        <div class="card-content">
+          <h3>Borabay Gölü</h3>
+          <p>
+Borabay Gölü, Amasya'nın doğal güzelliklerinden biridir. Şehir merkezine yaklaşık 30 km uzaklıkta bulunan göl, piknik, yürüyüş ve doğa sporları için ideal bir mekandır. Etrafındaki ormanlık alanlar, ziyaretçilere huzurlu bir ortam sunar. Göl, bölgenin ekolojik dengesine katkıda bulunur.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yer7" class="mb-5">
+      <div class="card-custom">
+        <img src="img/sehrim/ayna_.jpg" alt="Aynalı Mağara" />
+        <div class="card-content">
+          <h3>Aynalı Mağara</h3>
+          <p>
+Aynalı Mağara, Amasya'da yer alan önemli bir doğal oluşumdur. Mağara içerisinde bulunan sarkıt ve dikitler ile doğal aynalar, ziyaretçileri büyüler. Tarih boyunca çeşitli amaçlarla kullanılmış olan mağara, günümüzde turistik bir destinasyondur. Mağaranın sessizliği ve gizemi, ziyaretçilere farklı bir deneyim sunar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yer8" class="mb-5">
+      <div class="card-custom">
+        <img src="img/sehrim/ickale.jpg" alt="İç Kale" />
+        <div class="card-content">
+          <h3>İç Kale</h3>
+          <p>
+İç Kale, Amasya'nın en eski yerleşim alanlarından biridir. Şehir merkezinde yer alan kale, stratejik bir konumda bulunur. Tarihi boyunca birçok medeniyete ev sahipliği yapmış olan kale, günümüzde ziyaretçilere açıktır. İç Kale'nin surları ve kalıntıları, tarihî dokuya ışık tutar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yer9" class="mb-5">
+      <div class="card-custom">
+        <img src="img/sehrim/saat.jpg" alt="Saat Kulesi" />
+        <div class="card-content">
+          <h3>Saat Kulesi</h3>
+          <p>
+Amasya Saat Kulesi, şehrin simgelerinden biridir. Osmanlı döneminden kalma kule, şehrin çeşitli noktalarından rahatlıkla görülebilir. Saat Kulesi, hem estetik hem de fonksiyonel açıdan önemli bir yapıdır. Kule çevresindeki meydan, sosyal yaşamın merkezlerinden biridir.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
